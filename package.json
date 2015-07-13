@@ -1,6 +1,6 @@
 {
   "name": "joi-validator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "helper for commonly used Joi validations in hapi projects",
   "main": "index.js",
   "scripts": {

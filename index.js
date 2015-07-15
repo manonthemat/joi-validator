@@ -7,6 +7,7 @@ module.exports = (function() {
     defaultRegex: Joi.string().replace('\\', '\\\\').replace('"', '\\"'),
     passwordRegex: Joi.string().replace('\\', '\\\\').replace('"', '\\"'),
     slugRegex: Joi.string().regex(/^[a-z0-9-]+$/i),
+    promoCodeRegex: Joi.string().regex(/^[a-z0-9]{1,16}$/),
     searchRegex: Joi.string().replace('\\', '\\\\').replace('"', '\\"'),
     skuRegex: Joi.string().regex(/^[\w|-]+$/),
     mediaUrlRegex: Joi.string().uri({ scheme: ['http', 'https'] }),

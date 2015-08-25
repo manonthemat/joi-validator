@@ -11,7 +11,7 @@ module.exports = (function() {
     searchRegex: Joi.string().replace('\\', '\\\\').replace('"', '\\"'),
     skuRegex: Joi.string().regex(/^[\w|-]+$/),
     mediaUrlRegex: Joi.string().uri({ scheme: ['http', 'https'] }),
-    statesRegex: Joi.string().regex(/(^AL$)|(^AK$)|(^AZ$)|(^AR$)|(^CA$)|(^CO$)|(^CT$)|(^DE$)|(^FL$)|(^GA$)|(^HI$)|(^ID$)|(^IL$)|(^IN$)|(^IA$)|(^KS$)|(^KY$)|(^LA$)|(^ME$)|(^MD$)|(^MA$)|(^MI$)|(^MN$)|(^MS$)|(^MO$)|(^MT$)|(^NE$)|(^NV$)|(^NH$)|(^NJ$)|(^NM$)|(^NY$)|(^NC$)|(^ND$)|(^OH$)|(^OK$)|(^OR$)|(^PA$)|(^RI$)|(^SC$)|(^SD$)|(^TN$)|(^TX$)|(^UT$)|(^VT$)|(^VA$)|(^WA$)|(^WV$)|(^WI$)|(^WY$)/i),
+    statesRegex: Joi.string().regex(/(^AL$)|(^AK$)|(^AZ$)|(^AR$)|(^CA$)|(^CO$)|(^CT$)|(^DE$)|(^FL$)|(^GA$)|(^HI$)|(^ID$)|(^IL$)|(^IN$)|(^IA$)|(^KS$)|(^KY$)|(^LA$)|(^ME$)|(^MD$)|(^MA$)|(^MI$)|(^MN$)|(^MS$)|(^MO$)|(^MT$)|(^NE$)|(^NV$)|(^NH$)|(^NJ$)|(^NM$)|(^NY$)|(^NC$)|(^ND$)|(^OH$)|(^OK$)|(^OR$)|(^PA$)|(^RI$)|(^SC$)|(^SD$)|(^TN$)|(^TX$)|(^UT$)|(^VT$)|(^VA$)|(^WA$)|(^WV$)|(^WI$)|(^WY$)/),
     hexColorRegex: Joi.string().regex(/^[a-f0-9]{6}$/),
     email: Joi.string().email()
   };
